@@ -1,0 +1,25 @@
+{
+  "id": "support",
+  "version": "1",
+  "question": "Which support class should handle this request?",
+  "classes": [
+    {
+      "id": "track_order",
+      "description": "The person wants the current status or location of an order that was already placed.",
+      "exclusions": "Changing the order, the address, or a payment.",
+      "example": "Where is order 1842?"
+    },
+    {
+      "id": "billing_question",
+      "description": "",
+      "exclusions": "",
+      "example": ""
+    },
+    {
+      "id": "cancel_order",
+      "description": "",
+      "exclusions": "",
+      "example": ""
+    }
+  ]
+}

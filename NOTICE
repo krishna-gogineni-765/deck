@@ -1,7 +1,7 @@
-deck-4B
-Copyright 2026 the deck-4B authors
+deck
+Copyright 2026 the deck authors
 
-The deck-4B v1.0 adapter is a LoRA fine-tune of JevK5 v0.3
+The deck4b model is a LoRA fine-tune of JevK5 v0.3
 (huggingface.co/alibiserikbay/JevK5, revision
 c4f7fdb3aeab5582336406e78d3bef11bf98833d), Apache License 2.0. This server
 depends on the JevK5 runtime (github.com/allebee/jevk5, revision

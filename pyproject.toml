@@ -1,11 +1,14 @@
 [project]
-name = "deck-4b"
-version = "1.0.0"
-description = "deck-4B v1.0 FP8 server for the JevBench TypeSafe protocol"
+name = "deck"
+version = "0.1.0"
+description = "deck: zero-shot classification. deck4b is the decision model."
 readme = "README.md"
 license = "Apache-2.0"
 requires-python = ">=3.12,<3.14"
-dependencies = [
+dependencies = []
+
+[project.optional-dependencies]
+serve = [
     "torch==2.11.0",
     "transformers==5.17.0",
     "peft==0.21.0",
@@ -21,7 +24,7 @@ dependencies = [
 ]
 
 [project.scripts]
-deck-4b-serve = "deck4b.server:main"
+deck = "deck.cli:main"
 
 [build-system]
 requires = ["setuptools>=68"]

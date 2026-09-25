@@ -1,4 +1,4 @@
-"""Serve deck-4B v1.0 as a TypeSafe-compatible FP8 model."""
+"""Serve the deck4b model as a TypeSafe-compatible FP8 endpoint."""
 
 from __future__ import annotations
 
@@ -16,7 +16,7 @@ BASE_MODEL = "alibiserikbay/JevK5"
 BASE_REVISION = "c4f7fdb3aeab5582336406e78d3bef11bf98833d"
 DEFAULT_ADAPTER = "krishna765/deck-4b-v1.0"
 DEFAULT_ADAPTER_REVISION = "81e9f5e2cc701f86b1be700dfb49f6549ad83f39"
-DEFAULT_NAME = "deck-4b-v1.0"
+DEFAULT_NAME = "deck4b"
 
 
 def _adapter_dir(adapter: str | Path, revision: str | None) -> Path:
