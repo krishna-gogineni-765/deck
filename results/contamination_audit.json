@@ -1,0 +1,10 @@
+{
+  "training_file": "data/training_mix.jsonl",
+  "training_file_sha256": "9ace459104d932f05a81474f07a37053f50a0d88ad12d5830ea826abb8c4bca4",
+  "training_records": 1000,
+  "jevbench_public_records": 231,
+  "ngram_words": 8,
+  "exact_normalized_state_hits": [],
+  "shared_ngram_hits": [],
+  "passed": true
+}

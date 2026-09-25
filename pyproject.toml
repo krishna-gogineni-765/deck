@@ -1,0 +1,31 @@
+[project]
+name = "deck-4b"
+version = "1.0.0"
+description = "deck-4B v1.0 FP8 server for the JevBench TypeSafe protocol"
+readme = "README.md"
+license = "Apache-2.0"
+requires-python = ">=3.12,<3.14"
+dependencies = [
+    "torch==2.11.0",
+    "transformers==5.17.0",
+    "peft==0.21.0",
+    "torchao==0.18.0",
+    "accelerate==1.15.0",
+    "huggingface-hub==1.32.0",
+    "safetensors==0.8.0",
+    "numpy==2.5.3",
+    "einops==0.8.2",
+    "fla-core==0.4.2",
+    "flash-linear-attention==0.4.2",
+    "jevk5 @ git+https://github.com/allebee/jevk5.git@f944fe37ff1d5ed3830aa4c8d88b7189c8c1268a",
+]
+
+[project.scripts]
+deck-4b-serve = "deck4b.server:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]

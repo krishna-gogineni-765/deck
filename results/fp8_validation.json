@@ -1,0 +1,58 @@
+{
+  "model": "deck-4b-v1.0",
+  "adapter_repository": "krishna765/deck-4b-v1.0",
+  "adapter_revision": "81e9f5e2cc701f86b1be700dfb49f6549ad83f39",
+  "jevbench_revision": "1bcc55eb6c8cffde2306b3db03ede39b61c6152a",
+  "dataset_hash": "dc3995d8ae1e2fc8e81ce38431add509eb8bb39b85aadfd0c7c32079382dde51",
+  "adapter": "typesafe",
+  "execution": "serial, one request at a time, loopback, NVIDIA H100 80GB",
+  "complete": true,
+  "schema_valid": 231,
+  "failures": 0,
+  "renormalized": 0,
+  "overall": {
+    "correct": 203,
+    "n": 231,
+    "accuracy": 0.8787878787878788,
+    "ece10": 0.022988084832698256,
+    "brier": 0.18350581949184383,
+    "p50_seconds": 0.050614031992154196,
+    "p95_seconds": 0.1168531820003409
+  },
+  "tiers": {
+    "easy": {
+      "correct": 48,
+      "n": 48,
+      "ece10": 0.017414,
+      "p50_seconds": 0.050026,
+      "p95_seconds": 0.050547,
+      "mean_input_tokens": 163.8
+    },
+    "original": {
+      "correct": 68,
+      "n": 72,
+      "ece10": 0.051469,
+      "p50_seconds": 0.049991,
+      "p95_seconds": 0.050563,
+      "mean_input_tokens": 168.0
+    },
+    "hard": {
+      "correct": 87,
+      "n": 111,
+      "ece10": 0.040746,
+      "p50_seconds": 0.060455,
+      "p95_seconds": 0.141819,
+      "mean_input_tokens": 1274.1
+    }
+  },
+  "repeatability": {
+    "clean_serial_runs": 2,
+    "prediction_flips": 0,
+    "probability_dictionary_mismatches": 0
+  },
+  "notes": [
+    "Public JevBench items were used during model and runtime selection.",
+    "Validated before the served id was renamed to deck-4b-v1.0; weights and runtime are unchanged.",
+    "The batch-oriented FP8 path scored 205/231, but the submitted serial server scored 203/231; only the serial result is claimed."
+  ]
+}
